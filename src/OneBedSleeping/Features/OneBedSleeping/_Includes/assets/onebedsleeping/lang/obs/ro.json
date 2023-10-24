@@ -1,0 +1,8 @@
+﻿{
+  "Features.OneBedSleeping.Command.Description": "Schimbați regulile de somn într-un singur pat, pentru server.",
+  "Features.OneBedSleeping.Command.Hunger.Description": "Rata la care scade foamea pentru toată lumea, în timp ce timpul este accelerat.",
+  "Features.OneBedSleeping.Command.Hunger": "Rata Foamei în Timpul Somnului: {0}%",
+  "Features.OneBedSleeping.Command.Players": "Prag Somn Multi-jucători: {0}%",
+  "Features.OneBedSleeping.Command.Players.Description": "Procentul de jucători online care trebuie să doarmă înainte ca timpul să se accelereze.",
+  "Features.OneBedSleeping.NowSleeping": "Acum doarme: {0}"
+}

@@ -1,0 +1,8 @@
+﻿{
+  "Features.OneBedSleeping.Command.Description": "Zmień reguły spania w jednym łóżku na serwerze.",
+  "Features.OneBedSleeping.Command.Hunger.Description": "Wskaźnik spadku głodu dla wszystkich podczas przyspieszania czasu.",
+  "Features.OneBedSleeping.Command.Hunger": "Wartość głodu podczas snu: {0}%",
+  "Features.OneBedSleeping.Command.Players": "Progi wielu graczy: {0}%",
+  "Features.OneBedSleeping.Command.Players.Description": "Procent graczy online, którzy muszą spać, zanim czas przyspieszy.",
+  "Features.OneBedSleeping.NowSleeping": "Teraz śpi: {0}"
+}

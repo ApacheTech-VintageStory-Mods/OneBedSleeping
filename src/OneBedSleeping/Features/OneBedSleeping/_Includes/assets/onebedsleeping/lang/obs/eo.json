@@ -1,0 +1,8 @@
+﻿{
+  "Features.OneBedSleeping.Command.Description": "Ŝanĝi la regulojn de Unu-Lito Dormanta por la servilo.",
+  "Features.OneBedSleeping.Command.Hunger.Description": "La rapideco, kun kiu malsatas ĉiuj, dum la tempo rapidiĝas.",
+  "Features.OneBedSleeping.Command.Hunger": "Malsatada Ritmo Dum Dormado: {0}%",
+  "Features.OneBedSleeping.Command.Players": "Pluraj Ludantoj Dormanta Etendaĵo: {0}%",
+  "Features.OneBedSleeping.Command.Players.Description": "La procento de ensalutintaj ludantoj kiuj devas dormi, antaŭ ol la tempo rapideciĝas.",
+  "Features.OneBedSleeping.NowSleeping": "Nun dormas: {0}"
+}

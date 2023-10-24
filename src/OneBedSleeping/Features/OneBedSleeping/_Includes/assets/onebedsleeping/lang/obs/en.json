@@ -1,0 +1,9 @@
+{
+  "Features.OneBedSleeping.Command.Description": "Change One-Bed Sleeping rules, for the server.",
+  "Features.OneBedSleeping.Command.Hunger.Description": "The rate at which hunger drops for everyone, while time is sped up.",
+  "Features.OneBedSleeping.Command.Hunger": "Hunger Rate While Sleeping: {0}%",
+  "Features.OneBedSleeping.Command.Players": "Multi-player Sleep Threshold: {0}%",
+  "Features.OneBedSleeping.Command.Players.Description": "The percentage of online players that have to sleep, before time speeds up.",
+
+  "Features.OneBedSleeping.NowSleeping": "Now sleeping: {0}"
+}

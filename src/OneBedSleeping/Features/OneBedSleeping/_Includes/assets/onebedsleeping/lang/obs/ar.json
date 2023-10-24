@@ -1,0 +1,8 @@
+﻿{
+  "Features.OneBedSleeping.Command.Description": "تغيير قواعد النوم في سرير واحد للخادم.",
+  "Features.OneBedSleeping.Command.Hunger.Description": "معدل انخفاض الجوع للجميع أثناء تسريع الوقت.",
+  "Features.OneBedSleeping.Command.Hunger": "معدل الجوع أثناء النوم: {0}%",
+  "Features.OneBedSleeping.Command.Players": "نسبة النوم المتعدد: {0}%",
+  "Features.OneBedSleeping.Command.Players.Description": "النسبة المطلوبة من اللاعبين المتصلين الذين يجب أن يناموا قبل تسريع الوقت.",
+  "Features.OneBedSleeping.NowSleeping": "ينام الآن: {0}"
+}

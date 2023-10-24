@@ -1,0 +1,8 @@
+{
+  "Features.OneBedSleeping.Command.Description": "Cambia le regole del sonno in un letto, per il server.",
+  "Features.OneBedSleeping.Command.Hunger.Description": "Il tasso a cui diminuisce la fame per tutti, mentre il tempo è accelerato.",
+  "Features.OneBedSleeping.Command.Hunger": "Tasso di Fame Durante il Sonno: {0}%",
+  "Features.OneBedSleeping.Command.Players": "Soglia Sonno Multiplayer: {0}%",
+  "Features.OneBedSleeping.Command.Players.Description": "La percentuale di giocatori online che devono dormire prima che il tempo si acceleri.",
+  "Features.OneBedSleeping.NowSleeping": "Ora sta dormendo: {0}"
+}

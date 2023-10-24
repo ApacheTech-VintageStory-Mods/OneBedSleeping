@@ -1,0 +1,8 @@
+﻿{
+  "Features.OneBedSleeping.Command.Description": "サーバーのワンベッドスリーピングルールを変更します。",
+  "Features.OneBedSleeping.Command.Hunger.Description": "時間が速くなる間、誰もが空腹を感じる速度。",
+  "Features.OneBedSleeping.Command.Hunger": "寝ている間の空腹率：{0}%",
+  "Features.OneBedSleeping.Command.Players": "マルチプレイヤースリープのしきい値：{0}%",
+  "Features.OneBedSleeping.Command.Players.Description": "時間が速くなる前にオンラインプレイヤーの何パーセントが寝なければならないか。",
+  "Features.OneBedSleeping.NowSleeping": "現在寝ている：{0}"
+}
