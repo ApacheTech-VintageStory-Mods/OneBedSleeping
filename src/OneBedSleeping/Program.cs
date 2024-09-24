@@ -1,27 +1,28 @@
-﻿using Gantry.Services.HarmonyPatches.DependencyInjection;
-using Gantry.Services.Network.DependencyInjection;
+﻿using Gantry.Core.Hosting;
+using Gantry.Services.FileSystem.Hosting;
+using Gantry.Services.HarmonyPatches.Hosting;
+using Gantry.Services.Network.Hosting;
 
-namespace ApacheTech.VintageMods.OneBedSleeping
-{
-    [UsedImplicitly]
-    public sealed class Program : ModHost
-    {
-        public Program()
-        {
+namespace ApacheTech.VintageMods.OneBedSleeping;
+
+[UsedImplicitly]
+public sealed class Program() : ModHost(debugMode:
 #if DEBUG
-            ModEx.DebugMode = true;
+    true
+#else
+    false
 #endif
-        }
+)
+{
 
-        protected override void ConfigureServerModServices(IServiceCollection services, ICoreServerAPI sapi)
-        {
-            services.AddFileSystemService(o => o.RegisterSettingsFiles = true);
-        }
+    protected override void ConfigureServerModServices(IServiceCollection services, ICoreServerAPI sapi)
+    {
+        services.AddFileSystemService(sapi, o => o.RegisterSettingsFiles = true);
+    }
         
-        protected override void ConfigureUniversalModServices(IServiceCollection services, ICoreAPI api)
-        {
-            services.AddHarmonyPatchingService(o => o.AutoPatchModAssembly = true);
-            services.AddNetworkService();
-        }
+    protected override void ConfigureUniversalModServices(IServiceCollection services, ICoreAPI api)
+    {
+        services.AddHarmonyPatchingService(api, o => o.AutoPatchModAssembly = true);
+        services.AddNetworkService(api);
     }
 }

@@ -1,7 +1,7 @@
 <Project>
 	<PropertyGroup Label="Framework Versioning">
 		<TargetFramework>net7.0</TargetFramework>
-		<LangVersion>11</LangVersion>
+		<LangVersion>12</LangVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Label="Project Configuration">
@@ -87,10 +87,6 @@
 		</Reference>
 		<Reference Include="Newtonsoft.Json">
 			<HintPath>$(EnvironmentVariable)\Lib\Newtonsoft.Json.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
-		<Reference Include="OpenTK">
-			<HintPath>$(EnvironmentVariable)\Lib\OpenTK.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="protobuf-net">
