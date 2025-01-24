@@ -10,7 +10,7 @@ public sealed class OneBedSleeping : UniversalModSystem, IServerServiceRegistrar
 
     public void ConfigureServerModServices(IServiceCollection services, ICoreServerAPI sapi)
     {
-        sapi.Logger.GantryDebug("Adding OneBedSleeping feature settings to IOC.");
+        ApiEx.Logger.VerboseDebug("Adding OneBedSleeping feature settings to IOC.");
         services.AddFeatureWorldSettings<OneBedSleepingSettings>();
     }
 
@@ -63,5 +63,4 @@ public sealed class OneBedSleeping : UniversalModSystem, IServerServiceRegistrar
 
     private static string LangEntry(string code, params object[] args)
         => LangEx.FeatureString("OneBedSleeping", code, args);
-
 }

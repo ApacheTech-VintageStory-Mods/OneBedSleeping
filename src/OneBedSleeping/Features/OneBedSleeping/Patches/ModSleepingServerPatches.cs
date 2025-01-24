@@ -1,12 +1,11 @@
-﻿using Gantry.Core.Brighter.Common;
-
-// ReSharper disable InconsistentNaming
+﻿// ReSharper disable InconsistentNaming
 // ReSharper disable RedundantAssignment
+
+using Gantry.Services.BrighterChat.Commands;
 
 namespace ApacheTech.VintageMods.OneBedSleeping.Features.OneBedSleeping.Patches;
 
-[SettingsConsumer(EnumAppSide.Server)]
-[HarmonySidedPatch(EnumAppSide.Server)]
+[HarmonyServerSidePatch]
 [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
 public sealed class ModSleepingServerPatches : WorldSettingsConsumer<OneBedSleepingSettings>
 {

@@ -1,13 +1,13 @@
 ﻿// ReSharper disable StringLiteralTypo
 
-[assembly: ModDependency("game", "1.19.8")]
+[assembly: ModDependency("game", "1.20.1")]
 
 [assembly:ModInfo(
     "One Bed Sleeping",
     "onebedsleeping",
     Description = "For use on SMP servers. Only one person needs to sleep in order to pass the time.",
     Side = "Universal",
-    Version = "2.4.2",
+    Version = "2.5.0",
     RequiredOnClient = true,
     RequiredOnServer = true,
     NetworkVersion = "1.0.0",
