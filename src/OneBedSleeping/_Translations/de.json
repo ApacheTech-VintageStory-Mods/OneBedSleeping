@@ -1,0 +1,8 @@
+﻿{
+    "Features.OneBedSleeping.NowSleeping":  "Jetzt schlafend: {0}",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Die Geschwindigkeit, mit der der Hunger für alle abnimmt, während die Zeit beschleunigt wird.",
+    "Features.OneBedSleeping.Command.Players":  "Schlafschwelle für Mehrspieler: {0} %",
+    "Features.OneBedSleeping.Command.Players.Description":  "Der Prozentsatz der Online-Spieler, die schlafen müssen, bevor die Zeit schneller wird.",
+    "Features.OneBedSleeping.Command.Hunger":  "Hungerrate im Schlaf: {0}%",
+    "Features.OneBedSleeping.Command.Description":  "Ändern Sie die Regeln für den Ein-Bett-Schlaf für den Server."
+}

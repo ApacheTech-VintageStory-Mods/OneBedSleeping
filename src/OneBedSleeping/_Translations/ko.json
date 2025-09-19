@@ -1,0 +1,8 @@
+﻿{
+    "Features.OneBedSleeping.NowSleeping":  "지금 자고 있다: {0}",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "모든 사람의 배고픔이 감소하는 속도와 시간이 빨라지는 속도입니다.",
+    "Features.OneBedSleeping.Command.Players":  "멀티플레이어 수면 임계값: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "시간이 빨라지기 전에 잠을 자야 하는 온라인 플레이어의 비율입니다.",
+    "Features.OneBedSleeping.Command.Hunger":  "잠자는 동안 배고픔 비율: {0}%",
+    "Features.OneBedSleeping.Command.Description":  "서버에 대한 One-Bed Sleeping 규칙을 변경합니다."
+}

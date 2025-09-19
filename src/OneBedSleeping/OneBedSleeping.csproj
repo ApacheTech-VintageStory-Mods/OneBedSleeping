@@ -1,11 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<Version>2.5.2.0</Version>
-		<RootNamespace>ApacheTech.VintageMods.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+	<Import Project="..\..\..\..\..\Gantry\shared\Gantry.Shared\Gantry.Shared.projitems" Label="Shared" />
+
+	<PropertyGroup Label="Assembly Versioning">
+		<Version>3.0.0.0</Version>
+		<ModId>onebedsleeping</ModId>
+		<ModName>One Bed Sleeping</ModName>
+		<PackageMod>true</PackageMod>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\..\..\..\Gantry\src\Gantry\Gantry.csproj" />
+		<None Remove="$(ProjectDir)\**\.gitkeep" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="_Translations\en.json" />
 	</ItemGroup>
 
 </Project>

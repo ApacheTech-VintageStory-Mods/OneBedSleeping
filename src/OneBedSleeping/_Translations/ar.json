@@ -1,0 +1,8 @@
+﻿{
+    "Features.OneBedSleeping.NowSleeping":  "النوم الآن: {0}",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "معدل انخفاض الجوع للجميع ، بينما يتسارع الوقت.",
+    "Features.OneBedSleeping.Command.Players":  "عتبة النوم متعددة اللاعبين: {0}٪",
+    "Features.OneBedSleeping.Command.Players.Description":  "النسبة المئوية للاعبين عبر الإنترنت الذين يتعين عليهم النوم ، قبل تسريع الوقت.",
+    "Features.OneBedSleeping.Command.Hunger":  "معدل الجوع أثناء النوم: {0}٪",
+    "Features.OneBedSleeping.Command.Description":  "قم بتغيير قواعد النوم بسرير واحد للخادم."
+}

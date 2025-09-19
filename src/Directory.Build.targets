@@ -1,15 +1,28 @@
 <Project>
 
 	<PropertyGroup>
-		<AssemblyVersion>$(Version)</AssemblyVersion>
-		<FileVersion>$(Version)</FileVersion>
+		<CleanOutputDir>$([System.IO.Path]::GetDirectoryName('$(TargetPath)'))</CleanOutputDir>
 	</PropertyGroup>
 
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="if $(Configuration) == Debug (&#xD;&#xA;&#xD;&#xA;:: Generator Mod Info file. ::&#xD;&#xA;cd &quot;$(ModInfoGeneratorDir)&quot;&#xD;&#xA;&quot;$(ModInfoGeneratorPath)&quot; -a &quot;$(TargetPath)&quot; -o $(TargetDir)&#xD;&#xA;&#xD;&#xA;:: Copy all other relevant files to target directory. ::&#xD;&#xA;xcopy &quot;$(TargetDir)&quot; &quot;$(SolutionDir).debug\$(TargetFramework)\$(ProjectName)&quot; /y /e /c /q&#xD;&#xA;xcopy &quot;$(ProjectDir)_Includes\&quot; &quot;$(SolutionDir).debug\$(TargetFramework)\$(ProjectName)&quot; /y /e /c /q&#xD;&#xA;FOR /D %25%25G IN ($(ProjectDir)Features\**) DO (&#xD;&#xA;    if exist &quot;%25%25G\_Includes\&quot; xcopy &quot;%25%25G\_Includes\&quot; &quot;$(SolutionDir).debug\$(TargetFramework)\$(ProjectName)&quot; /y /e /c /q&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;if $(Configuration) == Package (&#xD;&#xA;&#xD;&#xA;:: Copy all other relevant files to target directory. ::&#xD;&#xA;xcopy &quot;$(ProjectDir)_Includes\&quot; &quot;$(TargetDir)_Includes\&quot; /y /e /c /q&#xD;&#xA;FOR /D %25%25G IN ($(ProjectDir)Features\**) DO (&#xD;&#xA;    if exist &quot;%25%25G\_Includes\&quot; xcopy &quot;%25%25G\_Includes\&quot; &quot;$(TargetDir)_Includes\&quot; /y /e /c /q&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;:: Package the mod. ::&#xD;&#xA;cd &quot;$(ModPackagerDir)&quot;&#xD;&#xA;&quot;$(ModPackagerPath)&quot; -a &quot;$(TargetPath)&quot;&#xD;&#xA;&#xD;&#xA;:: Copy mod package to releases directory. ::&#xD;&#xA;copy /y &quot;$(TargetDir)release\*.zip&quot; &quot;$(SolutionDir).releases\$(TargetFramework)&quot;&#xD;&#xA;&#xD;&#xA;)" />
+	<ItemGroup>
+		<BuildOutputFiles Include="$(TargetDir)\**\*" />
+		<IncludeDirs Include="$(ProjectDir)_Includes\**\*" />
+		<FeatureIncludeDirs Include="$(ProjectDir)Features\**\_Includes\**\*" />
+		<PackagedMods Include="$(TargetDir)release\*.zip" />
+	</ItemGroup>
+
+	<Target Name="PackageMod_RunScript" Condition=" '$(Configuration)' != 'Release' AND '$(PackageMod)' == 'true' " AfterTargets="PostBuildEvent">
+		<Message Text=" → PostBuild: Running mod packaging script for $(ProjectName) in $(Configuration) mode." Importance="high" />
+		<Exec Command="$(VsModPackagerDir)\$(VsModPackager) ^
+			--SolutionDir $(SolutionDir) ^
+			--TargetPath $(TargetPath) ^
+			--TargetDir $(TargetDir) ^
+			--DependenciesDir $(TargetDir) ^
+			--ProjectDir $(ProjectDir) ^
+			--ModId $(ModId) ^
+			--Configuration $(Configuration) ^
+			--VersioningStyle ModInfo ^
+			--LogLevel Verbose" />
 	</Target>
 
-	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-		<Exec Command="del /f /s /q $(TargetDir) &gt; NUL&#xD;&#xA;rmdir /s /q $(TargetDir)&#xD;&#xA;&#xD;&#xA;if $(Configuration) == Debug (&#xD;&#xA;&#xD;&#xA;del /f /s /q $(SolutionDir).debug\$(TargetFramework)\$(ProjectName) &gt; NUL&#xD;&#xA;rmdir /s /q $(SolutionDir).debug\$(TargetFramework)\$(ProjectName) &gt; NUL&#xD;&#xA;if not exist $(SolutionDir).debug\$(TargetFramework)\$(ProjectName)\ mkdir $(SolutionDir).debug\$(TargetFramework)\$(ProjectName)\&#xD;&#xA;&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;if $(Configuration) == Package (&#xD;&#xA;&#xD;&#xA;del /f /s /q $(SolutionDir).releases\$(TargetFramework)\ &gt; NUL&#xD;&#xA;rmdir /s /q $(SolutionDir).releases\$(TargetFramework)\ &gt; NUL&#xD;&#xA;if not exist $(SolutionDir).releases\$(TargetFramework)\ mkdir $(SolutionDir).releases\$(TargetFramework)\&#xD;&#xA;&#xD;&#xA;)" />
-	</Target>
 </Project>

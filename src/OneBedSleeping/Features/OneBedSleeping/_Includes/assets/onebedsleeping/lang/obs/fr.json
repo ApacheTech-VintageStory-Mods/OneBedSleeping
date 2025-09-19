@@ -1,8 +1,0 @@
-{
-  "Features.OneBedSleeping.Command.Description": "Modifiez les règles de sommeil en un lit pour le serveur.",
-  "Features.OneBedSleeping.Command.Hunger.Description": "Le taux de chute de la faim pour tout le monde, pendant que le temps s'accélère.",
-  "Features.OneBedSleeping.Command.Hunger": "Taux de Faim Pendant le Sommeil : {0}%",
-  "Features.OneBedSleeping.Command.Players": "Seuil de Sommeil Multijoueur : {0}%",
-  "Features.OneBedSleeping.Command.Players.Description": "Le pourcentage de joueurs en ligne qui doivent dormir avant que le temps ne s'accélère.",
-  "Features.OneBedSleeping.NowSleeping": "Dort maintenant : {0}"
-}

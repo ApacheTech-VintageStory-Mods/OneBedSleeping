@@ -1,0 +1,8 @@
+﻿{
+    "Features.OneBedSleeping.NowSleeping":  "Şimdi uyuyor: {0}",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Zaman hızlanırken herkes için açlığın düşme hızı.",
+    "Features.OneBedSleeping.Command.Players":  "Çok oyunculu Uyku Eşiği: %{0}",
+    "Features.OneBedSleeping.Command.Players.Description":  "Zaman hızlanmadan uyumak zorunda kalan çevrimiçi oyuncuların yüzdesi.",
+    "Features.OneBedSleeping.Command.Hunger":  "Uyurken Açlık Oranı: %{0}",
+    "Features.OneBedSleeping.Command.Description":  "Sunucu için Tek Yataklı Uyku kurallarını değiştirin."
+}

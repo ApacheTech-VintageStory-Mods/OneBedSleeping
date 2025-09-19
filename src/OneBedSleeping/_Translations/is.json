@@ -1,0 +1,8 @@
+﻿{
+    "Features.OneBedSleeping.NowSleeping":  "Sefur nú: {0}",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Hraðinn sem hungrið minnkar hjá öllum, á meðan tímanum er flýtt.",
+    "Features.OneBedSleeping.Command.Players":  "Svefnþröskuldur fyrir fjölspilara: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Hlutfall netspilara sem þurfa að sofa áður en tíminn hraðar.",
+    "Features.OneBedSleeping.Command.Hunger":  "Hungurhlutfall í svefni: {0}%",
+    "Features.OneBedSleeping.Command.Description":  "Breyttu svefnreglum fyrir eitt rúm, fyrir netþjóninn."
+}

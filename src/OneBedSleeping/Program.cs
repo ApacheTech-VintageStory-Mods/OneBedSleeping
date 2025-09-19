@@ -1,3 +1,3 @@
-﻿namespace ApacheTech.VintageMods.OneBedSleeping;
+﻿namespace OneBedSleeping;
 
-public sealed class Program : ModHost;
+internal sealed class Program : G.Host<Program>;

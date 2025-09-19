@@ -1,0 +1,8 @@
+﻿{
+    "Features.OneBedSleeping.NowSleeping":  "Sover nå: {0}",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Hastigheten som sulten synker for alle, mens tiden blir raskere.",
+    "Features.OneBedSleeping.Command.Players":  "Søvnterskel for flere spillere: {0} %",
+    "Features.OneBedSleeping.Command.Players.Description":  "Prosentandelen av online-spillere som må sove, før tiden går raskere.",
+    "Features.OneBedSleeping.Command.Hunger":  "Sult mens du sover: {0} %",
+    "Features.OneBedSleeping.Command.Description":  "Endre regler for sove i én seng for serveren."
+}

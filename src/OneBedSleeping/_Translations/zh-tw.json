@@ -1,0 +1,8 @@
+﻿{
+    "Features.OneBedSleeping.NowSleeping":  "現在睡覺：{0}",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "每個人的飢餓感下降的速度，而時間卻加快了。",
+    "Features.OneBedSleeping.Command.Players":  "多人睡眠閾值：{0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "在時間加快之前必須睡覺的在線玩家的百分比。",
+    "Features.OneBedSleeping.Command.Hunger":  "睡覺時飢餓率：{0}%",
+    "Features.OneBedSleeping.Command.Description":  "變更伺服器的「單床睡眠」規則。"
+}

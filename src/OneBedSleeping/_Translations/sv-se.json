@@ -1,0 +1,8 @@
+﻿{
+    "Features.OneBedSleeping.NowSleeping":  "Nu sover: {0}",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Den hastighet med vilken hungern sjunker för alla, samtidigt som tiden går snabbare.",
+    "Features.OneBedSleeping.Command.Players":  "Sömntröskel för flera spelare: {0} %",
+    "Features.OneBedSleeping.Command.Players.Description":  "Procentandelen onlinespelare som måste sova innan tiden går snabbare.",
+    "Features.OneBedSleeping.Command.Hunger":  "Hunger när du sover: {0}%",
+    "Features.OneBedSleeping.Command.Description":  "Ändra regler för enbäddssömn för servern."
+}

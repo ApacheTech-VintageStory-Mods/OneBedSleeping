@@ -1,7 +1,8 @@
 <Project>
 	<PropertyGroup Label="Framework Versioning">
-		<TargetFramework>net7.0</TargetFramework>
-		<LangVersion>12</LangVersion>
+		<TargetFramework>net8.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<PackageMod>true</PackageMod>
 	</PropertyGroup>
 
 	<PropertyGroup Label="Project Configuration">
@@ -12,13 +13,45 @@
 		<GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
 		<Configurations>Debug;Release;Package</Configurations>
 		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+		<Nullable>enable</Nullable>
+		<DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
 	</PropertyGroup>
 
-	<PropertyGroup Label="Environment Variables">
-		<!-- Environment Variable not recongised by Visual Studio Analysers. -->
-		<!-- ReSharper disable once UnknownProperty -->
-		<EnvironmentVariable>$(VINTAGE_STORY)</EnvironmentVariable>
-	</PropertyGroup>
+	<ItemGroup Label="Assembly Metadata">
+		<!-- Dynamic -->
+		<AssemblyMetadata Include="ModDB Page" Value="https://mods.vintagestory.at/$(MSBuildProjectName)" />
+		<AssemblyMetadata Include="Issue Tracker" Value="https://github.com/ApacheTech-VintageStory-Mods/$(MSBuildProjectName)/issues" />
+
+		<!-- Static -->
+		<AssemblyMetadata Include="Visit my Website" Value="https://apachetech.co.uk" />
+		<AssemblyMetadata Include="Subscribe on YouTube" Value="https://youtube.com/@ApacheGamingUK" />
+		<AssemblyMetadata Include="Subscribe on Twitch" Value="https://twitch.tv/ApacheGamingUK" />
+
+		<!-- Monetised -->
+		<AssemblyMetadata Include="Buy Me A Coffee" Value="https://www.buymeacoffee.com/Apache" />
+		<AssemblyMetadata Include="Donate via PayPal" Value="https://bit.ly/APGDonate" />
+		<AssemblyMetadata Include="Join me on Patreon" Value="https://patreon.com/ApacheTechSolutions" />
+		<AssemblyMetadata Include="Amazon Wishlist" Value="https://amzn.eu/7qvKTFu" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\..\..\Gantry\src\Gantry\Gantry.csproj" />
+		<ProjectReference Include="..\..\..\..\..\Gantry\analysers\Gantry.Analysers.CSharp\Gantry.Analysers.CSharp.csproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+			<OutputItemType>Analyzer</OutputItemType>
+		</ProjectReference>
+		<ProjectReference Include="..\..\..\..\..\Gantry\analysers\Gantry.Analysers.CSharp.CodeFixes\Gantry.Analysers.CSharp.CodeFixes.csproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+			<OutputItemType>Analyzer</OutputItemType>
+		</ProjectReference>
+		<InternalsVisibleTo Include="Gantry" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Features\**\_Includes\**\*.*">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectCapability Include="DynamicDependentFile" />
@@ -36,84 +69,57 @@
 		<DebugSymbols>true</DebugSymbols>
 	</PropertyGroup>
 
-	<PropertyGroup>
-		<ModPackagerDir>C:\Users\Apache\source\repos\.tools\packager\</ModPackagerDir>
-		<ModPackagerName>ModPackager.exe</ModPackagerName>
-		<ModPackagerPath>$(ModPackagerDir)$(ModPackagerName)</ModPackagerPath>
-
-		<ModInfoGeneratorDir>C:\Users\Apache\source\repos\.tools\mig\</ModInfoGeneratorDir>
-		<ModInfoGeneratorName>mig.exe</ModInfoGeneratorName>
-		<ModInfoGeneratorPath>$(ModInfoGeneratorDir)$(ModInfoGeneratorName)</ModInfoGeneratorPath>
-	</PropertyGroup>
-
 	<ItemGroup Label="Game Imports">
 		<!-- Vintage Story Game Libraries -->
 		<Reference Include="VintagestoryAPI">
-			<HintPath>$(EnvironmentVariable)\VintagestoryAPI.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)\VintagestoryAPI.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="VintagestoryLib">
-			<HintPath>$(EnvironmentVariable)\VintagestoryLib.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)\VintagestoryLib.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="VSCreativeMod">
-			<HintPath>$(EnvironmentVariable)\Mods\VSCreativeMod.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)\Mods\VSCreativeMod.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="VSSurvivalMod">
-			<HintPath>$(EnvironmentVariable)\Mods\VSSurvivalMod.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)\Mods\VSSurvivalMod.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="VSEssentials">
-			<HintPath>$(EnvironmentVariable)\Mods\VSEssentials.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)\Mods\VSEssentials.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<!-- Vintage Story Included Libraries -->
 		<Reference Include="Eto">
-			<HintPath>$(EnvironmentVariable)\Eto.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)\Eto.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="0Harmony">
-			<HintPath>$(EnvironmentVariable)\Lib\0Harmony.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)\Lib\0Harmony.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="AnimatedGif">
-			<HintPath>$(EnvironmentVariable)\Lib\AnimatedGif.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)\Lib\AnimatedGif.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="cairo-sharp">
-			<HintPath>$(EnvironmentVariable)\Lib\cairo-sharp.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)\Lib\cairo-sharp.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="Newtonsoft.Json">
-			<HintPath>$(EnvironmentVariable)\Lib\Newtonsoft.Json.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)\Lib\Newtonsoft.Json.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="protobuf-net">
-			<HintPath>$(EnvironmentVariable)\Lib\protobuf-net.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
-		<Reference Include="System.Collections.Immutable">
-			<HintPath>$(VINTAGE_STORY)\Lib\System.Collections.Immutable.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
-		<Reference Include="System.Text.Json">
-			<HintPath>$(VINTAGE_STORY)\Lib\System.Text.Json.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
-		<Reference Include="System.Text.Encodings.Web">
-			<HintPath>$(VINTAGE_STORY)\Lib\System.Text.Encodings.Web.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)\Lib\protobuf-net.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="Tavis.JsonPatch">
-			<HintPath>$(EnvironmentVariable)\Lib\Tavis.JsonPatch.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)\Lib\Tavis.JsonPatch.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 	</ItemGroup>
 
-	<ItemGroup>
-		<None Include="$(ProjectName).saproj">
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</None>
-	</ItemGroup>
 </Project>

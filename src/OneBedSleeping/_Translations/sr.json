@@ -1,0 +1,8 @@
+﻿{
+    "Features.OneBedSleeping.NowSleeping":  "Sada spava: {0}",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Stopa kojom glad opada za sve, dok se vreme ubrzava.",
+    "Features.OneBedSleeping.Command.Players":  "Prag spavanja za više igrača: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Procenat online igrača koji moraju da spavaju, pre nego što se vreme ubrza.",
+    "Features.OneBedSleeping.Command.Hunger":  "Stopa gladi tokom spavanja: {0}%",
+    "Features.OneBedSleeping.Command.Description":  "Promenite pravila za spavanje u jednom krevetu, za server."
+}

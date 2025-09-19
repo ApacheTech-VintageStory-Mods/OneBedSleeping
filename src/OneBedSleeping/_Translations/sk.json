@@ -1,0 +1,8 @@
+﻿{
+    "Features.OneBedSleeping.NowSleeping":  "Teraz spí: {0}",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Rýchlosť, akou hlad klesá u všetkých, zatiaľ čo čas sa zrýchľuje.",
+    "Features.OneBedSleeping.Command.Players":  "Prah spánku pre viacerých hráčov: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Percento online hráčov, ktorí musia spať, kým sa čas zrýchli.",
+    "Features.OneBedSleeping.Command.Hunger":  "Miera hladu počas spánku: {0}%",
+    "Features.OneBedSleeping.Command.Description":  "Zmeňte pravidlá jednopostelového spánku pre server."
+}

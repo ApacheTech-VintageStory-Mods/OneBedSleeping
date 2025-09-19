@@ -1,0 +1,8 @@
+﻿{
+    "Features.OneBedSleeping.NowSleeping":  "Сейчас спит: {0}",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Скорость, с которой голод падает у всех, в то время как время ускоряется.",
+    "Features.OneBedSleeping.Command.Players":  "Порог сна в многопользовательской игре: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Процент онлайн-игроков, которым приходится спать, прежде чем время ускорится.",
+    "Features.OneBedSleeping.Command.Hunger":  "Уровень голода во время сна: {0}%",
+    "Features.OneBedSleeping.Command.Description":  "Измените правила сна на одной кровати для официанта."
+}

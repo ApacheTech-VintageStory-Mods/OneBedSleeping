@@ -1,0 +1,8 @@
+﻿{
+    "Features.OneBedSleeping.NowSleeping":  "Nukkuu nyt: {0}",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Vauhti, jolla nälkä laskee kaikilla, kun taas aika nopeutuu.",
+    "Features.OneBedSleeping.Command.Players":  "Moninpelin nukkumiskynnys: {0} %",
+    "Features.OneBedSleeping.Command.Players.Description":  "Niiden online-pelaajien prosenttiosuus, jotka joutuvat nukkumaan ennen kuin aika nopeutuu.",
+    "Features.OneBedSleeping.Command.Hunger":  "Nälkä nukkuessa: {0} %",
+    "Features.OneBedSleeping.Command.Description":  "Muuta yhden sängyn nukkumissääntöjä palvelimelle."
+}
