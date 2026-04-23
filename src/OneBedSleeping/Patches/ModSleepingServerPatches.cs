@@ -1,4 +1,4 @@
-﻿using Gantry.Services.BrighterChat.Commands;
+﻿using Gantry.Services.Mediator.Chat.Commands;
 using OneBedSleeping.Settings;
 
 namespace OneBedSleeping.Patches;
@@ -34,7 +34,7 @@ public sealed class ModSleepingServerPatches : GantrySettingsPatch<OneBedSleepin
         try
         {
             var allPlayers = serverMain.AllPlayersThatCouldSleep();
-            Gantry.CommandProcessor.Send(new BroadcastMessageToAllPlayersCommand(
+            Gantry.CommandProcessor.Execute(new BroadcastMessageToAllPlayersCommand(
                 messageCode: Gantry.Lang.Code("OneBedSleeping", "NowSleeping"),
                 localiseForEachPlayer: true,
                 args: string.Join(", ", allPlayers.SleepingPlayers().Select(p => p.PlayerName)))
