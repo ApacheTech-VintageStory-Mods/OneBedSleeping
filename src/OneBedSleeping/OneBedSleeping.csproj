@@ -2,7 +2,7 @@
 	<Import Project="..\..\..\..\..\Gantry\shared\Gantry.Shared\Gantry.Shared.projitems" Label="Shared" />
 
 	<PropertyGroup Label="Assembly Versioning">
-		<Version>3.0.0.0</Version>
+		<Version>4.0.0.0</Version>
 		<ModId>onebedsleeping</ModId>
 		<ModName>One Bed Sleeping</ModName>
 		<PackageMod>true</PackageMod>
