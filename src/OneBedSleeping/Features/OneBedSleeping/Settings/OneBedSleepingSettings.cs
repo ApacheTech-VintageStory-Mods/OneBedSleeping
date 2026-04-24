@@ -1,4 +1,4 @@
-﻿namespace OneBedSleeping.Settings;
+﻿namespace OneBedSleeping.Features.OneBedSleeping.Settings;
 
 /// <summary>
 ///     Represents the settings for the one-bed sleeping feature, allowing for configuration of saturation

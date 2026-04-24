@@ -1,6 +1,6 @@
-﻿using OneBedSleeping.Settings;
+﻿using OneBedSleeping.Features.OneBedSleeping.Settings;
 
-namespace OneBedSleeping.Systems;
+namespace OneBedSleeping.Features.OneBedSleeping.Systems;
 
 public sealed class OneBedSleeping : ServerModSystem<OneBedSleeping>, IServerServiceRegistrar
 {

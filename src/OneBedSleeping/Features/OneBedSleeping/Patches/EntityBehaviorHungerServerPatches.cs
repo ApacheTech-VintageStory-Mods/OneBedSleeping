@@ -1,6 +1,6 @@
-﻿using OneBedSleeping.Settings;
+﻿using OneBedSleeping.Features.OneBedSleeping.Settings;
 
-namespace OneBedSleeping.Patches;
+namespace OneBedSleeping.Features.OneBedSleeping.Patches;
 
 public sealed class EntityBehaviorHungerServerPatches : GantrySettingsPatch<OneBedSleepingSettings>
 {

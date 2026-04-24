@@ -1,4 +1,4 @@
-﻿namespace OneBedSleeping.Patches;
+﻿namespace OneBedSleeping.Features.OneBedSleeping.Patches;
 
 /// <summary>
 ///     Provides extension methods for server-side world and player-related operations.

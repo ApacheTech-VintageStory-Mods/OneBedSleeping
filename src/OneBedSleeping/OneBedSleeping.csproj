@@ -13,7 +13,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Include="_Translations\en.json" />
+	  <Content Include="Features\OneBedSleeping\_Translations\en.json" />
 	</ItemGroup>
 
 </Project>
