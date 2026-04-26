@@ -1,4 +1,4 @@
-﻿[assembly: ModDependency("game", "1.22.0")]
+﻿[assembly: ModDependency("game", GameVersion.ShortGameVersion)]
 
 [assembly:ModInfo(
     "One Bed Sleeping",
@@ -7,7 +7,7 @@
     Side = "Universal",
     Version = "4.0.0",
     RequiredOnServer = true,
-    NetworkVersion = "1.0.0",
+    NetworkVersion = GameVersion.NetworkVersion,
     IconPath = "modicon.png",
     Website = "https://apachetech.co.uk",
     Contributors = ["ApacheTech Solutions"],
