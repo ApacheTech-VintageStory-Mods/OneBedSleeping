@@ -11,6 +11,11 @@
 public sealed class OneBedSleepingSettings : FeatureSettings<OneBedSleepingSettings>
 {
     /// <summary>
+    ///     Whether sleeping is allowed on the server. Disable this to prevent players from sleeping entirely.
+    /// </summary>
+    public bool AllowSleeping { get; set; } = true;
+
+    /// <summary>
     ///     Multiplier applied to player saturation during one-bed sleeping.
     /// </summary>
     /// <remarks>

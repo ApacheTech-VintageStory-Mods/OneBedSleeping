@@ -34,6 +34,13 @@ public sealed class OneBedSleeping : ServerModSystem<OneBedSleeping>, IServerSer
             .WithArgs(parsers.OptionalFloat("percentage"))
             .HandleWith(OnPercentSubCommand)
             .EndSubCommand();
+
+        command
+            .BeginSubCommand("allow")
+            .WithDescription(T("Command.Allow.Description"))
+            .WithArgs(parsers.OptionalBool("value"))
+            .HandleWith(OnAllowSubCommand)
+            .EndSubCommand();
     }
 
     private TextCommandResult DisplaySettings(TextCommandCallingArgs args)
@@ -41,7 +48,15 @@ public sealed class OneBedSleeping : ServerModSystem<OneBedSleeping>, IServerSer
         var sb = new StringBuilder();
         sb.AppendLine(T("Command.Players", _settings.PlayerThreshold * 100));
         sb.AppendLine(T("Command.Hunger", _settings.SaturationMultiplier * 100));
+        sb.AppendLine(T("Command.Allow", Core.Lang.Boolean(_settings.AllowSleeping)));
         return TextCommandResult.Success(sb.ToString());
+    }
+
+    private TextCommandResult OnAllowSubCommand(TextCommandCallingArgs args)
+    {
+        var value = args.Parsers[0].GetValue().To<bool?>();
+        if (value.HasValue) _settings.AllowSleeping = value.Value;
+        return TextCommandResult.Success(T("Command.Allow", _settings.AllowSleeping ? T("Allowed") : T("Disallowed")));
     }
 
     private TextCommandResult OnHungerSubCommand(TextCommandCallingArgs args)
