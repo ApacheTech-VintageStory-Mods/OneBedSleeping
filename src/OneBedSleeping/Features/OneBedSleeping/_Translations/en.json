@@ -4,5 +4,13 @@
   "Features.OneBedSleeping.Command.Hunger": "Hunger Rate While Sleeping: {0}%",
   "Features.OneBedSleeping.Command.Players": "Multi-player Sleep Threshold: {0}%",
   "Features.OneBedSleeping.Command.Players.Description": "The percentage of online players that have to sleep, before time speeds up.",
-  "Features.OneBedSleeping.NowSleeping": "Now sleeping: {0}"
+  "Features.OneBedSleeping.Command.Allow": "Allow Sleeping: {0}",
+  "Features.OneBedSleeping.Command.Allow.Description": "Whether sleeping is allowed or not.",
+  "Features.OneBedSleeping.NowSleeping": "Now sleeping: {0}",
+
+  "Features.OneBedSleeping.AllowSleeping.Allowed": "Sleeping is allowed.",
+  "Features.OneBedSleeping.AllowSleeping.Disallowed": "Sleeping is disallowed.",
+  "Features.OneBedSleeping.SleepingDisallowed": "Sleeping is not allowed at this time.",
+  "Features.OneBedSleeping.SleepingAllowed": "Sleeping is allowed. {0}% of players need to sleep to skip the night.",
+  "ingameerror-obs-sleeping-disallowed": "Sleeping is not allowed at this time."
 }
