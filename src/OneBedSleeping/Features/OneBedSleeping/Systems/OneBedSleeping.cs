@@ -69,6 +69,7 @@ public sealed class OneBedSleeping : ServerModSystem<OneBedSleeping>, IServerSer
     private TextCommandResult OnPercentSubCommand(TextCommandCallingArgs args)
     {
         var value = args.Parsers[0].GetValue().To<float?>().GetValueOrDefault(0f);
+        if (value > 0f && value < 1f) value *= 100f;
         _settings.PlayerThreshold = GameMath.Clamp(value / 100, 0f, 1f);
         return TextCommandResult.Success(T("Command.Players", _settings.PlayerThreshold * 100));
     }
