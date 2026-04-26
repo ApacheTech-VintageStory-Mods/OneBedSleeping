@@ -1,35 +1,42 @@
 ﻿using Gantry.Services.Mediator.Chat.Commands;
+using OneBedSleeping.Features.OneBedSleeping.Extensions;
 using OneBedSleeping.Features.OneBedSleeping.Settings;
+using OneBedSleeping.Features.OneBedSleeping.Systems;
 
 namespace OneBedSleeping.Features.OneBedSleeping.Patches;
 
 public sealed class ModSleepingServerPatches : GantrySettingsPatch<OneBedSleepingSettings>
 {
     [HarmonyPrefix]
-    [HarmonyServerPatch(typeof(ModSleeping), "AreAllPlayersSleeping")]
-    public static bool Patch_ModSleeping_AreAllPlayersSleeping_Prefix(ICoreServerAPI ___sapi, ref bool __result)
-    {
-        var allPlayers = ___sapi.World.AllPlayersThatCouldSleep().ToList();
-        var playersSleeping = allPlayers.SleepingPlayers().Count();
-        var requiredNumberOfPlayers = GameMath.Clamp(Math.Ceiling(allPlayers.Count * Settings.PlayerThreshold), 1, allPlayers.Count);
-        __result = playersSleeping >= requiredNumberOfPlayers;
-        return false;
-    }
-
-    [HarmonyPrefix]
     [HarmonyServerPatch(typeof(ModSleeping), "ServerSlowTick")]
     public static bool Patch_ModSleeping_ServerSlowTick_Prefix(ModSleeping __instance, IServerNetworkChannel ___serverChannel)
     {
-        var nowAllSleeping = __instance.AreAllPlayersSleeping();
-        if (nowAllSleeping == __instance.AllSleeping) return false;
-        if (nowAllSleeping) BroadcastNowSleepingMessage();
-        ___serverChannel.BroadcastPacket(new NetworksMessageAllSleepMode { On = nowAllSleeping });
-        __instance.AllSleeping = nowAllSleeping;
+        Debug.Assert(G.Side is EnumAppSide.Server);
+
+        var system = G.Sapi.ModLoader.GetModSystem<ObsControlSystem>();
+
+        var nowSleeping = system.IsSleepActive;
+
+        if (nowSleeping == __instance.AllSleeping)
+        {
+            return false;
+        }
+
+        if (nowSleeping)
+        {
+            BroadcastNowSleepingMessage();
+        }
+
+        ___serverChannel.BroadcastPacket(new NetworksMessageAllSleepMode { On = nowSleeping });
+
+        __instance.AllSleeping = nowSleeping;
+
         return false;
     }
 
     private static void BroadcastNowSleepingMessage()
     {
+        Debug.Assert(G.Side is EnumAppSide.Server);
         var serverMain = Gantry.ApiEx.ServerMain;
         try
         {
@@ -37,7 +44,7 @@ public sealed class ModSleepingServerPatches : GantrySettingsPatch<OneBedSleepin
             Gantry.CommandProcessor.Execute(new BroadcastMessageToAllPlayersCommand(
                 messageCode: Gantry.Lang.Code("OneBedSleeping", "NowSleeping"),
                 localiseForEachPlayer: true,
-                args: string.Join(", ", allPlayers.SleepingPlayers().Select(p => p.PlayerName)))
+                args: string.Join(", ", serverMain.PlayersInBed().Select(p => p.PlayerName)))
             );
         }
         catch (ArgumentNullException e)

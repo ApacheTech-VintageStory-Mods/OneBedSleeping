@@ -2,7 +2,7 @@
 
 namespace OneBedSleeping.Features.OneBedSleeping.Systems;
 
-public sealed class OneBedSleeping : ServerModSystem<OneBedSleeping>, IServerServiceRegistrar
+public sealed class ObsCommandSystem : ServerModSystem<ObsCommandSystem>, IServerServiceRegistrar
 {
     private OneBedSleepingSettings _settings = new();
 
@@ -41,7 +41,42 @@ public sealed class OneBedSleeping : ServerModSystem<OneBedSleeping>, IServerSer
             .WithArgs(parsers.OptionalBool("value"))
             .HandleWith(OnAllowSubCommand)
             .EndSubCommand();
+
+#if DEBUG
+        command
+            .BeginSubCommand("debug")
+            .WithArgs(parsers.WordRange("message", "tiredness", "reset"))
+            .HandleWith(OnDebugSubCommand)
+            .EndSubCommand();
+#endif
     }
+
+#if DEBUG
+    private TextCommandResult OnDebugSubCommand(TextCommandCallingArgs args)
+    {
+        var message = args.Parsers[0].GetValue().To<string>();
+        if (message == "tiredness")
+        {
+            var byPlayer = args.Caller.Player;
+            if (byPlayer.Entity.GetBehavior("tiredness") is not EntityBehaviorTiredness ebt)
+            {
+                return TextCommandResult.Error("Tiredness behaviour not found on player.");
+            }
+            return TextCommandResult.Success($"Tiredness: {ebt.Tiredness}");
+        }
+        if (message == "reset")
+        {
+            var byPlayer = args.Caller.Player;
+            if (byPlayer.Entity.GetBehavior("tiredness") is not EntityBehaviorTiredness ebt)
+            {
+                return TextCommandResult.Error("Tiredness behaviour not found on player.");
+            }
+            ebt.Tiredness = 12f;
+            return TextCommandResult.Success("Tiredness reset to 12.");
+        }
+        return TextCommandResult.Error($"Unknown debug message: {message}");
+    }
+#endif
 
     private TextCommandResult DisplaySettings(TextCommandCallingArgs args)
     {
