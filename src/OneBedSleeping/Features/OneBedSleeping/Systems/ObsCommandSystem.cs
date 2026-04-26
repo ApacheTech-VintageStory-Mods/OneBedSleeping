@@ -91,7 +91,7 @@ public sealed class ObsCommandSystem : ServerModSystem<ObsCommandSystem>, IServe
     {
         var value = args.Parsers[0].GetValue().To<bool?>();
         if (value.HasValue) _settings.AllowSleeping = value.Value;
-        return TextCommandResult.Success(T("Command.Allow", _settings.AllowSleeping ? T("Allowed") : T("Disallowed")));
+        return TextCommandResult.Success(T("Command.Allow", Core.Lang.Boolean(_settings.AllowSleeping)));
     }
 
     private TextCommandResult OnHungerSubCommand(TextCommandCallingArgs args)
