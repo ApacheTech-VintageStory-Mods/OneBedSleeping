@@ -6,9 +6,9 @@ public sealed class EntityBehaviorHungerServerPatches : GantrySettingsPatch<OneB
 {
     [HarmonyPrefix]
     [HarmonyServerPatch(typeof(EntityBehaviorHunger), "ReduceSaturation")]
-    public static bool Patch_EntityBehaviorHunger_ReduceSaturation_Prefix(ICoreAPI ___api, ref float satLossMultiplier)
+    public static bool Patch_EntityBehaviorHunger_ReduceSaturation_Prefix(ref float satLossMultiplier)
     {
-        var sleepingMod = ___api.ModLoader.GetModSystem<ModSleeping>();
+        var sleepingMod = G.Sapi.ModLoader.GetModSystem<ModSleeping>();
         if (sleepingMod.AllSleeping) satLossMultiplier *= Settings.SaturationMultiplier;
         return true;
     }
