@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "Sover nå: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "Hastigheten som sulten synker for alle, mens tiden blir raskere.",
-    "Features.OneBedSleeping.Command.Players":  "Søvnterskel for flere spillere: {0} %",
-    "Features.OneBedSleeping.Command.Players.Description":  "Prosentandelen av online-spillere som må sove, før tiden går raskere.",
-    "Features.OneBedSleeping.Command.Hunger":  "Sult mens du sover: {0} %",
-    "Features.OneBedSleeping.Command.Description":  "Endre regler for sove i én seng for serveren."
+    "Features.OneBedSleeping.Command.Description":  "Endre reglene for One-Bed Sleeping for serveren.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Hastigheten sulten faller for alle, mens tiden går raskere.",
+    "Features.OneBedSleeping.Command.Hunger":  "Sultrate mens du sover: {0}%",
+    "Features.OneBedSleeping.Command.Players":  "Flerspiller-søvnterskel: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Prosentandelen nettspillere som må sove før tiden går fortere.",
+    "Features.OneBedSleeping.Command.Allow":  "Tillat søvn: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Om det er lov å sove eller ikke.",
+    "Features.OneBedSleeping.NowSleeping":  "Nå sover: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Det er lov å sove.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Det er forbudt å sove.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "Det er ikke tillatt å sove på dette tidspunktet.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Søvn er tillatt. {0}% av spillerne må sove for å hoppe over natten.",
+    "ingameerror-obs-sleeping-disallowed":  "Det er ikke tillatt å sove på dette tidspunktet."
 }

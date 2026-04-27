@@ -1,0 +1,15 @@
+﻿{
+    "Features.OneBedSleeping.Command.Description":  "Változtasd meg az egyágyú alvó szabályait a szerver számára.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Az a sebesség, amellyel mindenkinél csökken az éhség, miközben az idő gyorsul.",
+    "Features.OneBedSleeping.Command.Hunger":  "Éhségarány alvás közben: {0}%",
+    "Features.OneBedSleeping.Command.Players":  "Többjátékos alvásküszöb: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Az online játékosok aránya, akiknek aludniuk kell, mielőtt az idő felgyorsul.",
+    "Features.OneBedSleeping.Command.Allow":  "Alvás engedélyezése: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Akár engedélyezett az alvás, akár nem.",
+    "Features.OneBedSleeping.NowSleeping":  "Most alvás: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Alvás megengedett.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Alvás tilos.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "Jelenleg nem engedélyezett az alvás.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Alvás megengedett. A játékosok {0}%-ának aludnia kell, hogy kihagyja az éjszakát.",
+    "ingameerror-obs-sleeping-disallowed":  "Jelenleg nem engedélyezett az alvás."
+}

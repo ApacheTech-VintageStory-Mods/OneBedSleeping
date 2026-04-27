@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "Nu slapen: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "De snelheid waarmee de honger voor iedereen daalt, terwijl de tijd wordt versneld.",
+    "Features.OneBedSleeping.Command.Description":  "Verander de regels voor One-Bed Sleeping voor de server.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "De snelheid waarmee de honger voor iedereen afneemt, terwijl de tijd versnelt.",
+    "Features.OneBedSleeping.Command.Hunger":  "Hongerpercentage tijdens het slapen: {0}%",
     "Features.OneBedSleeping.Command.Players":  "Slaapdrempel voor meerdere spelers: {0}%",
     "Features.OneBedSleeping.Command.Players.Description":  "Het percentage online spelers dat moet slapen voordat de tijd versnelt.",
-    "Features.OneBedSleeping.Command.Hunger":  "Honger tijdens het slapen: {0}%",
-    "Features.OneBedSleeping.Command.Description":  "Wijzig de regels voor slapen met één bed voor de server."
+    "Features.OneBedSleeping.Command.Allow":  "Sta slaap toe: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Of slapen nu toegestaan is of niet.",
+    "Features.OneBedSleeping.NowSleeping":  "Nu slapen: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Slapen is toegestaan.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Slapen is niet toegestaan.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "Slapen is op dit moment niet toegestaan.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Slapen is toegestaan. {0}% van de spelers moet slapen om de nacht over te slaan.",
+    "ingameerror-obs-sleeping-disallowed":  "Slapen is op dit moment niet toegestaan."
 }

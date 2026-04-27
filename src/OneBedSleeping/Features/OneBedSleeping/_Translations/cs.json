@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "Právě spí: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "Rychlost, s jakou klesá hlad pro všechny, zatímco čas se zrychluje.",
-    "Features.OneBedSleeping.Command.Players":  "Práh spánku pro více hráčů: {0} %",
-    "Features.OneBedSleeping.Command.Players.Description":  "Procento online hráčů, kteří musí spát, než se čas zrychlí.",
+    "Features.OneBedSleeping.Command.Description":  "Změňte pravidla pro spaní v jedné posteli, pro server.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Rychlost, jakou hlad klesá u všech, zatímco čas se zrychluje.",
     "Features.OneBedSleeping.Command.Hunger":  "Míra hladu během spánku: {0}%",
-    "Features.OneBedSleeping.Command.Description":  "Změňte pravidla pro spaní na jedné posteli pro server."
+    "Features.OneBedSleeping.Command.Players":  "Práh spánku v multiplayeru: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Procento online hráčů, kteří musí spát, než se čas zrychlí.",
+    "Features.OneBedSleeping.Command.Allow":  "Dovolte spánek: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Ať už je spánek povolen nebo ne.",
+    "Features.OneBedSleeping.NowSleeping":  "Teď spí: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Spánek je povolen.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Spánek je zakázán.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "V tuto dobu není povoleno spát.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Spánek je povolen. {0}% hráčů potřebuje spát, aby přeskočili noc.",
+    "ingameerror-obs-sleeping-disallowed":  "V tuto dobu není povoleno spát."
 }

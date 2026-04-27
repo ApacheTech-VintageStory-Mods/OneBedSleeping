@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "Sefur nú: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "Hraðinn sem hungrið minnkar hjá öllum, á meðan tímanum er flýtt.",
-    "Features.OneBedSleeping.Command.Players":  "Svefnþröskuldur fyrir fjölspilara: {0}%",
-    "Features.OneBedSleeping.Command.Players.Description":  "Hlutfall netspilara sem þurfa að sofa áður en tíminn hraðar.",
-    "Features.OneBedSleeping.Command.Hunger":  "Hungurhlutfall í svefni: {0}%",
-    "Features.OneBedSleeping.Command.Description":  "Breyttu svefnreglum fyrir eitt rúm, fyrir netþjóninn."
+    "Features.OneBedSleeping.Command.Description":  "Breyttu reglum um einrúms svefn fyrir þjóninn.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Hversu hratt hungur minnkar hjá öllum, á meðan tíminn hraðar sér.",
+    "Features.OneBedSleeping.Command.Hunger":  "Hungurtíðni í svefni: {0}%",
+    "Features.OneBedSleeping.Command.Players":  "Þröskuldur fyrir svefn í fjölspilun: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Hlutfall netspilara sem þurfa að sofa áður en tíminn hraðar sér.",
+    "Features.OneBedSleeping.Command.Allow":  "Leyfðu svefn: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Hvort sem það er leyfilegt að sofa eða ekki.",
+    "Features.OneBedSleeping.NowSleeping":  "Nú sofandi: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Svefn er leyfilegur.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Svefn er ekki leyfilegur.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "Svefn er ekki leyfður á þessum tíma.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Svefn er leyfilegur. {0}% leikmanna þurfa að sofa til að sleppa nóttinni.",
+    "ingameerror-obs-sleeping-disallowed":  "Svefn er ekki leyfður á þessum tíma."
 }

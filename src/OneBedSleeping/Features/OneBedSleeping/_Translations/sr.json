@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "Sada spava: {0}",
+    "Features.OneBedSleeping.Command.Description":  "Promenite pravila za spavanje u jednom krevetu, za server.",
     "Features.OneBedSleeping.Command.Hunger.Description":  "Stopa kojom glad opada za sve, dok se vreme ubrzava.",
+    "Features.OneBedSleeping.Command.Hunger":  "Stopa gladi tokom spavanja: {0}%",
     "Features.OneBedSleeping.Command.Players":  "Prag spavanja za više igrača: {0}%",
     "Features.OneBedSleeping.Command.Players.Description":  "Procenat online igrača koji moraju da spavaju, pre nego što se vreme ubrza.",
-    "Features.OneBedSleeping.Command.Hunger":  "Stopa gladi tokom spavanja: {0}%",
-    "Features.OneBedSleeping.Command.Description":  "Promenite pravila za spavanje u jednom krevetu, za server."
+    "Features.OneBedSleeping.Command.Allow":  "Dozvolite spavanje: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Da li je spavanje dozvoljeno ili ne.",
+    "Features.OneBedSleeping.NowSleeping":  "Sada spava: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Spavanje je dozvoljeno.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Spavanje je zabranjeno.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "Spavanje nije dozvoljeno u ovom trenutku.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Spavanje je dozvoljeno. {0}% igrača treba da spava da preskoči noć.",
+    "ingameerror-obs-sleeping-disallowed":  "Spavanje nije dozvoljeno u ovom trenutku."
 }

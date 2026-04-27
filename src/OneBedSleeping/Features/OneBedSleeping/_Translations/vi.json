@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "Đang ngủ: {0}",
+    "Features.OneBedSleeping.Command.Description":  "Thay đổi quy tắc Ngủ một giường, cho máy chủ.",
     "Features.OneBedSleeping.Command.Hunger.Description":  "Tốc độ đói giảm đối với tất cả mọi người, trong khi thời gian được đẩy nhanh.",
+    "Features.OneBedSleeping.Command.Hunger":  "Tỷ lệ đói khi ngủ: {0}%",
     "Features.OneBedSleeping.Command.Players":  "Ngưỡng ngủ nhiều người chơi: {0}%",
     "Features.OneBedSleeping.Command.Players.Description":  "Tỷ lệ người chơi trực tuyến phải ngủ, trước khi thời gian tăng tốc.",
-    "Features.OneBedSleeping.Command.Hunger":  "Tỷ lệ đói khi ngủ: {0}%",
-    "Features.OneBedSleeping.Command.Description":  "Thay đổi quy tắc Ngủ một giường, cho máy chủ."
+    "Features.OneBedSleeping.Command.Allow":  "Cho phép ngủ: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Ngủ có được phép ngủ hay không.",
+    "Features.OneBedSleeping.NowSleeping":  "Đang ngủ: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Được phép ngủ.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Ngủ không được phép.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "Lúc này không được phép ngủ.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Được phép ngủ. {0}% người chơi cần ngủ để bỏ qua đêm.",
+    "ingameerror-obs-sleeping-disallowed":  "Lúc này không được phép ngủ."
 }

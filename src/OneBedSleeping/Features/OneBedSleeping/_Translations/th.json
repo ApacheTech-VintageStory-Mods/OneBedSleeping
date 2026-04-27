@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "กําลังนอนหลับ: {0}",
+    "Features.OneBedSleeping.Command.Description":  "เปลี่ยนกฎการนอนแบบเตียงเดียวสําหรับเซิร์ฟเวอร์",
     "Features.OneBedSleeping.Command.Hunger.Description":  "อัตราที่ความหิวลดลงสําหรับทุกคนในขณะที่เวลาเร็วขึ้น",
+    "Features.OneBedSleeping.Command.Hunger":  "อัตราความหิวขณะนอนหลับ: {0}%",
     "Features.OneBedSleeping.Command.Players":  "เกณฑ์การนอนหลับของผู้เล่นหลายคน: {0}%",
     "Features.OneBedSleeping.Command.Players.Description":  "เปอร์เซ็นต์ของผู้เล่นออนไลน์ที่ต้องนอนหลับก่อนที่เวลาจะเร็วขึ้น",
-    "Features.OneBedSleeping.Command.Hunger":  "อัตราความหิวขณะนอนหลับ: {0}%",
-    "Features.OneBedSleeping.Command.Description":  "เปลี่ยนกฎการนอนแบบเตียงเดียวสําหรับเซิร์ฟเวอร์"
+    "Features.OneBedSleeping.Command.Allow":  "อนุญาตให้นอนหลับ: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "ไม่ว่าจะอนุญาตให้นอนหลับหรือไม่",
+    "Features.OneBedSleeping.NowSleeping":  "กําลังนอนหลับ: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "อนุญาตให้นอนหลับได้",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "ไม่อนุญาตให้นอนหลับ",
+    "Features.OneBedSleeping.SleepingDisallowed":  "ไม่อนุญาตให้นอนหลับในขณะนี้",
+    "Features.OneBedSleeping.SleepingAllowed":  "อนุญาตให้นอนหลับได้ {0}% ของผู้เล่นต้องนอนหลับเพื่อข้ามคืน",
+    "ingameerror-obs-sleeping-disallowed":  "ไม่อนุญาตให้นอนหลับในขณะนี้"
 }

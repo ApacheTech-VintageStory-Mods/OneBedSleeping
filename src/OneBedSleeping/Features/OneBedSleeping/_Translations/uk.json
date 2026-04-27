@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "Зараз спимо: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "Швидкість, з якою голод зменшується у всіх, а час прискорюється.",
-    "Features.OneBedSleeping.Command.Players":  "Поріг сну для кількох гравців: {0}%",
-    "Features.OneBedSleeping.Command.Players.Description":  "Відсоток онлайн-гравців, яким доводиться спати, перш ніж час прискориться.",
-    "Features.OneBedSleeping.Command.Hunger":  "Частота голоду під час сну: {0}%",
-    "Features.OneBedSleeping.Command.Description":  "Змініть правила сну на одному ліжку для сервера."
+    "Features.OneBedSleeping.Command.Description":  "Змініть правила односпального сну для офіціанта.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Швидкість зниження голоду у всіх, а час прискорюється.",
+    "Features.OneBedSleeping.Command.Hunger":  "Рівень голоду під час сну: {0}%",
+    "Features.OneBedSleeping.Command.Players":  "Поріг сну в мультиплеєрі: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Відсоток онлайн-гравців, які мають спати до того, як час прискориться.",
+    "Features.OneBedSleeping.Command.Allow":  "Дозволити спати: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Чи дозволено спати, чи ні.",
+    "Features.OneBedSleeping.NowSleeping":  "Зараз спить: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Сон дозволений.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Сон заборонено.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "У цей час спати заборонено.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Сон дозволений. {0}% гравців мають спати, щоб пропустити ніч.",
+    "ingameerror-obs-sleeping-disallowed":  "У цей час спати заборонено."
 }

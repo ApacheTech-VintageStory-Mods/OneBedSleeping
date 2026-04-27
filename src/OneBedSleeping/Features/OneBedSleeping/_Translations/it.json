@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "Ora dorme: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "La velocità con cui la fame diminuisce per tutti, mentre il tempo si accelera.",
-    "Features.OneBedSleeping.Command.Players":  "Soglia di sonno multigiocatore: {0}%",
-    "Features.OneBedSleeping.Command.Players.Description":  "La percentuale di giocatori online che devono dormire, prima che il tempo acceleri.",
+    "Features.OneBedSleeping.Command.Description":  "Cambia le regole del sonno con un letto, per il server.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Il ritmo con cui la fame diminuisce per tutti, mentre il tempo accelera.",
     "Features.OneBedSleeping.Command.Hunger":  "Tasso di fame durante il sonno: {0}%",
-    "Features.OneBedSleeping.Command.Description":  "Modificare le regole di sonno con un letto, per il server."
+    "Features.OneBedSleeping.Command.Players":  "Soglia del sonno multiplayer: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "La percentuale di giocatori online che devono dormire prima che il tempo acceleri.",
+    "Features.OneBedSleeping.Command.Allow":  "Consentire il sonno: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Che sia permesso dormire o meno.",
+    "Features.OneBedSleeping.NowSleeping":  "Ora che dorme: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Dormire è permesso.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Dormire è vietato.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "Al momento non è permesso dormire.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Dormire è permesso. {0}% dei giocatori deve dormire per saltare la notte.",
+    "ingameerror-obs-sleeping-disallowed":  "Al momento non è permesso dormire."
 }

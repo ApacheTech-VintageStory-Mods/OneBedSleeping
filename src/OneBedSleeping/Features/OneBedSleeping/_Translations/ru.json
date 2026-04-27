@@ -1,8 +1,15 @@
 ﻿{
+    "Features.OneBedSleeping.Command.Description":  "Измените правила однокровного сна для сервера.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Скорость, с которой голод снижается у всех, а время ускоряется.",
+    "Features.OneBedSleeping.Command.Hunger":  "Уровень голода во сне: {0}%",
+    "Features.OneBedSleeping.Command.Players":  "Порог сна в мультиплеере: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Процент онлайн-игроков, которым нужно спать, прежде чем время ускорится.",
+    "Features.OneBedSleeping.Command.Allow":  "Разрешите спать: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Можно ли спать или нет.",
     "Features.OneBedSleeping.NowSleeping":  "Сейчас спит: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "Скорость, с которой голод падает у всех, в то время как время ускоряется.",
-    "Features.OneBedSleeping.Command.Players":  "Порог сна в многопользовательской игре: {0}%",
-    "Features.OneBedSleeping.Command.Players.Description":  "Процент онлайн-игроков, которым приходится спать, прежде чем время ускорится.",
-    "Features.OneBedSleeping.Command.Hunger":  "Уровень голода во время сна: {0}%",
-    "Features.OneBedSleeping.Command.Description":  "Измените правила сна на одной кровати для официанта."
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Сон разрешён.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Спать запрещено.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "В это время спать нельзя.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Сон разрешен. {0}% игроков нуждаются в спите, чтобы пропустить ночь.",
+    "ingameerror-obs-sleeping-disallowed":  "В это время спать нельзя."
 }

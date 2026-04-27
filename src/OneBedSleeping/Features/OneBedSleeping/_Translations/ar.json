@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "النوم الآن: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "معدل انخفاض الجوع للجميع ، بينما يتسارع الوقت.",
-    "Features.OneBedSleeping.Command.Players":  "عتبة النوم متعددة اللاعبين: {0}٪",
-    "Features.OneBedSleeping.Command.Players.Description":  "النسبة المئوية للاعبين عبر الإنترنت الذين يتعين عليهم النوم ، قبل تسريع الوقت.",
+    "Features.OneBedSleeping.Command.Description":  "غير قواعد النوم بسرير واحد للسيرفر.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "معدل انخفاض الجوع لدى الجميع، بينما يتسارع الوقت.",
     "Features.OneBedSleeping.Command.Hunger":  "معدل الجوع أثناء النوم: {0}٪",
-    "Features.OneBedSleeping.Command.Description":  "قم بتغيير قواعد النوم بسرير واحد للخادم."
+    "Features.OneBedSleeping.Command.Players":  "عتبة النوم في اللعب الجماعي: {0}٪",
+    "Features.OneBedSleeping.Command.Players.Description":  "نسبة اللاعبين عبر الإنترنت الذين يضطرون للنوم قبل أن يتسارع الوقت.",
+    "Features.OneBedSleeping.Command.Allow":  "السماح بالنوم: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "سواء كان النوم مسموحا أم لا.",
+    "Features.OneBedSleeping.NowSleeping":  "الآن نائم: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "النوم مسموح به.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "النوم ممنوع.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "النوم غير مسموح في هذا الوقت.",
+    "Features.OneBedSleeping.SleepingAllowed":  "النوم مسموح به. {0}٪ من اللاعبين يحتاجون للنوم لتخطي الليل.",
+    "ingameerror-obs-sleeping-disallowed":  "النوم غير مسموح في هذا الوقت."
 }

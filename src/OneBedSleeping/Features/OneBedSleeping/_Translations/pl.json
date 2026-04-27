@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "Teraz śpi: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "Tempo, w jakim głód spada u wszystkich, podczas gdy czas jest przyspieszony.",
-    "Features.OneBedSleeping.Command.Players":  "Próg uśpienia dla wielu graczy: {0}%",
-    "Features.OneBedSleeping.Command.Players.Description":  "Odsetek graczy online, którzy muszą spać, zanim czas przyspieszy.",
+    "Features.OneBedSleeping.Command.Description":  "Zmień zasady spania z jednym łóżkiem, dla serwera.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Tempo, w jakim głód spada u wszystkich, podczas gdy czas jest przyspieszany.",
     "Features.OneBedSleeping.Command.Hunger":  "Wskaźnik głodu podczas snu: {0}%",
-    "Features.OneBedSleeping.Command.Description":  "Zmień zasady spania w jednym łóżku dla serwera."
+    "Features.OneBedSleeping.Command.Players":  "Próg snu w trybie wieloosobowym: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Procent graczy online, którzy muszą spać, zanim czas się przyspieszy.",
+    "Features.OneBedSleeping.Command.Allow":  "Pozwól na sen: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Niezależnie od tego, czy sen jest dozwolony, czy nie.",
+    "Features.OneBedSleeping.NowSleeping":  "Teraz śpi: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Dozwolone jest spanie.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Spanie jest zabronione.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "Obecnie nie wolno spać.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Dozwolone jest spanie. {0}% graczy musi spać, żeby pominąć noc.",
+    "ingameerror-obs-sleeping-disallowed":  "Obecnie nie wolno spać."
 }

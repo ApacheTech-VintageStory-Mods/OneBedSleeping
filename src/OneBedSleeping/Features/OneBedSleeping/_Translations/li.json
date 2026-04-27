@@ -1,0 +1,15 @@
+﻿{
+    "Features.OneBedSleeping.Command.Description":  "Pakeiskite vienos lovos miego taisykles serveriui.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Greitis, kuriuo alkis mažėja visiems, o laikas pagreitėja.",
+    "Features.OneBedSleeping.Command.Hunger":  "Alkio lygis miegant: {0}%",
+    "Features.OneBedSleeping.Command.Players":  "Kelių žaidėjų miego slenkstis: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Procentas internetinių žaidėjų, kurie turi miegoti, kol laikas pagreitėja.",
+    "Features.OneBedSleeping.Command.Allow":  "Leisti miegoti: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Nesvarbu, ar leidžiama miegoti, ar ne.",
+    "Features.OneBedSleeping.NowSleeping":  "Dabar miega: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Leidžiama miegoti.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Miegoti draudžiama.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "Šiuo metu miegoti neleidžiama.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Miegoti leidžiama. {0}% žaidėjų turi miegoti, kad praleistų naktį.",
+    "ingameerror-obs-sleeping-disallowed":  "Šiuo metu miegoti neleidžiama."
+}

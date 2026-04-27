@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "現在睡覺：{0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "每個人的飢餓感下降的速度，而時間卻加快了。",
-    "Features.OneBedSleeping.Command.Players":  "多人睡眠閾值：{0}%",
-    "Features.OneBedSleeping.Command.Players.Description":  "在時間加快之前必須睡覺的在線玩家的百分比。",
-    "Features.OneBedSleeping.Command.Hunger":  "睡覺時飢餓率：{0}%",
-    "Features.OneBedSleeping.Command.Description":  "變更伺服器的「單床睡眠」規則。"
+    "Features.OneBedSleeping.Command.Description":  "改變伺服器的單床睡規則。",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "飢餓感下降的速度，而時間卻被加速。",
+    "Features.OneBedSleeping.Command.Hunger":  "睡覺時的飢餓率： {0}%",
+    "Features.OneBedSleeping.Command.Players":  "多人遊戲睡眠閾值： {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "線上玩家必須睡覺的比例，時間才會加速。",
+    "Features.OneBedSleeping.Command.Allow":  "允許睡眠： {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "不管睡覺是否被允許。",
+    "Features.OneBedSleeping.NowSleeping":  "現在睡覺： {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "允許睡覺。",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "不允許睡覺。",
+    "Features.OneBedSleeping.SleepingDisallowed":  "目前不允許睡覺。",
+    "Features.OneBedSleeping.SleepingAllowed":  "允許睡覺。 {0}%的玩家需要睡覺才能跳過過夜。",
+    "ingameerror-obs-sleeping-disallowed":  "目前不允許睡覺。"
 }

@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "Nukkuu nyt: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "Vauhti, jolla nälkä laskee kaikilla, kun taas aika nopeutuu.",
-    "Features.OneBedSleeping.Command.Players":  "Moninpelin nukkumiskynnys: {0} %",
-    "Features.OneBedSleeping.Command.Players.Description":  "Niiden online-pelaajien prosenttiosuus, jotka joutuvat nukkumaan ennen kuin aika nopeutuu.",
-    "Features.OneBedSleeping.Command.Hunger":  "Nälkä nukkuessa: {0} %",
-    "Features.OneBedSleeping.Command.Description":  "Muuta yhden sängyn nukkumissääntöjä palvelimelle."
+    "Features.OneBedSleeping.Command.Description":  "Muuta One-Bed Sleeping -säännöt palvelimelle.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Nälkä laskee kaikilla samalla kun aika kiihtyy.",
+    "Features.OneBedSleeping.Command.Hunger":  "Näläntunne nukkuessa: {0}%",
+    "Features.OneBedSleeping.Command.Players":  "Moninpelin unikynnys: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Verkkopelaajien prosenttiosuus, jotka joutuvat nukkumaan ennen kuin aika nopeutuu.",
+    "Features.OneBedSleeping.Command.Allow":  "Salli nukkuminen: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Onko nukkuminen sallittua vai ei.",
+    "Features.OneBedSleeping.NowSleeping":  "Nyt nukkuen: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Nukkuminen on sallittua.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Nukkuminen on kiellettyä.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "Nukkuminen ei ole tällä hetkellä sallittua.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Nukkuminen on sallittua. {0}% pelaajista tarvitsee nukkua, jotta yö voi ohittaa.",
+    "ingameerror-obs-sleeping-disallowed":  "Nukkuminen ei ole tällä hetkellä sallittua."
 }

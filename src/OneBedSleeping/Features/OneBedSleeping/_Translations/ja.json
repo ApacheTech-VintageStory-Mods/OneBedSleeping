@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "今寝ている:{0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "時間が早まる一方で、すべての人の空腹感が減少する速度。",
-    "Features.OneBedSleeping.Command.Players":  "マルチプレイヤー睡眠のしきい値: {0}%",
-    "Features.OneBedSleeping.Command.Players.Description":  "時間が速くなる前に眠らなければならないオンラインプレイヤーの割合。",
-    "Features.OneBedSleeping.Command.Hunger":  "睡眠中の空腹率:{0}%",
-    "Features.OneBedSleeping.Command.Description":  "サーバーの One-Bed Sleeping ルールを変更します。"
+    "Features.OneBedSleeping.Command.Description":  "サーバーのワンベッドスリーピングルールを変更してください。",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "飢えが全員に減る速度で、時間が加速する。",
+    "Features.OneBedSleeping.Command.Hunger":  "睡眠中の空腹率: {0}%",
+    "Features.OneBedSleeping.Command.Players":  "マルチプレイヤー睡眠閾値: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "オンラインプレイヤーのうち、時間が速くなる前に眠らなければならない割合。",
+    "Features.OneBedSleeping.Command.Allow":  "睡眠を許す: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "眠ることが許されているかどうかは別として。",
+    "Features.OneBedSleeping.NowSleeping":  "今は寝ている: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "寝ることは許されています。",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "睡眠は禁止されています。",
+    "Features.OneBedSleeping.SleepingDisallowed":  "現時点では睡眠は禁止されています。",
+    "Features.OneBedSleeping.SleepingAllowed":  "睡眠は許可されています。 {0}%のプレイヤーは夜を飛ばすために睡眠が必要です。",
+    "ingameerror-obs-sleeping-disallowed":  "現時点では睡眠は禁止されています。"
 }

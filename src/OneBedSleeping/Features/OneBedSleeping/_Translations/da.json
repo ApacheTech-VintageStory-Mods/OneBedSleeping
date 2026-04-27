@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "Sover nu: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "Den hastighed, hvormed sulten falder for alle, mens tiden fremskyndes.",
-    "Features.OneBedSleeping.Command.Players":  "Søvntærskel for flere spillere: {0} %",
-    "Features.OneBedSleeping.Command.Players.Description":  "Procentdelen af onlinespillere, der skal sove, før tiden går hurtigere.",
-    "Features.OneBedSleeping.Command.Hunger":  "Sult under søvn: {0} %",
-    "Features.OneBedSleeping.Command.Description":  "Skift regler for sovepladser i én seng for serveren."
+    "Features.OneBedSleeping.Command.Description":  "Ændr reglerne for One-Bed Sleeping for serveren.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Den hastighed, hvor sulten falder for alle, mens tiden går hurtigere.",
+    "Features.OneBedSleeping.Command.Hunger":  "Sultrate under søvn: {0}%",
+    "Features.OneBedSleeping.Command.Players":  "Multiplayer-søvngrænse: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Procentdelen af online-spillere, der skal sove, før tiden går hurtigere.",
+    "Features.OneBedSleeping.Command.Allow":  "Tillad søvn: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Om det er tilladt at sove eller ej.",
+    "Features.OneBedSleeping.NowSleeping":  "Nu sover: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Søvn er tilladt.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Søvn er forbudt.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "Søvn er ikke tilladt på nuværende tidspunkt.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Søvn er tilladt. {0}% af spillerne skal sove for at springe natten over.",
+    "ingameerror-obs-sleeping-disallowed":  "Søvn er ikke tilladt på nuværende tidspunkt."
 }

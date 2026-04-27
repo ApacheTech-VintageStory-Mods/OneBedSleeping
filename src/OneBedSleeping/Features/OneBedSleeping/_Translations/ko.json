@@ -1,8 +1,15 @@
 ﻿{
-    "Features.OneBedSleeping.NowSleeping":  "지금 자고 있다: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "모든 사람의 배고픔이 감소하는 속도와 시간이 빨라지는 속도입니다.",
+    "Features.OneBedSleeping.Command.Description":  "서버의 원침대 수면 규칙을 변경하세요.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "모두의 배고픔이 떨어지는 속도와 시간이 빨라지는 속도.",
+    "Features.OneBedSleeping.Command.Hunger":  "수면 중 배고픔: {0}%",
     "Features.OneBedSleeping.Command.Players":  "멀티플레이어 수면 임계값: {0}%",
-    "Features.OneBedSleeping.Command.Players.Description":  "시간이 빨라지기 전에 잠을 자야 하는 온라인 플레이어의 비율입니다.",
-    "Features.OneBedSleeping.Command.Hunger":  "잠자는 동안 배고픔 비율: {0}%",
-    "Features.OneBedSleeping.Command.Description":  "서버에 대한 One-Bed Sleeping 규칙을 변경합니다."
+    "Features.OneBedSleeping.Command.Players.Description":  "온라인 플레이어 중 잠을 자야 하는 비율, 시간이 빨라지기 전까지.",
+    "Features.OneBedSleeping.Command.Allow":  "수면 허용: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "잠이 허용되는지 여부와 상관없이.",
+    "Features.OneBedSleeping.NowSleeping":  "지금 잠들어 있어요: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "잠자는 것도 허용됩니다.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "잠자는 것은 금지되어 있습니다.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "현재는 잠을 자는 것이 허용되지 않습니다.",
+    "Features.OneBedSleeping.SleepingAllowed":  "잠자는 것이 허용됩니다. {0}%의 플레이어가 밤을 건너뛸 수 있도록 잠을 자야 합니다.",
+    "ingameerror-obs-sleeping-disallowed":  "현재는 잠을 자는 것이 허용되지 않습니다."
 }

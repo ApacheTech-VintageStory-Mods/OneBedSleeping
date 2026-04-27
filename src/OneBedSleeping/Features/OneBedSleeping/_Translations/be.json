@@ -1,0 +1,15 @@
+﻿{
+    "Features.OneBedSleeping.Command.Description":  "Змяніце правілы адналожкавага сну для афіцыянта.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Тэмп, з якой голад зніжаецца ва ўсіх, а час паскараецца.",
+    "Features.OneBedSleeping.Command.Hunger":  "Голад падчас сну: {0}%",
+    "Features.OneBedSleeping.Command.Players":  "Парог сну ў мультыплэеры: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Працэнт онлайн-гульцоў, якім трэба спаць, пакуль час не паскараецца.",
+    "Features.OneBedSleeping.Command.Allow":  "Дазволіць спаць: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Незалежна ад таго, ці дазволена спаць.",
+    "Features.OneBedSleeping.NowSleeping":  "Цяпер спіць: {0}",
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Спаць дазволена.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Сон забаронены.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "У гэты час спаць забаронены.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Сон дазволены. {0}% гульцоў павінны спаць, каб прапусціць ноч.",
+    "ingameerror-obs-sleeping-disallowed":  "У гэты час спаць забаронены."
+}

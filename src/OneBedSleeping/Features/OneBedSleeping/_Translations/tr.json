@@ -1,8 +1,15 @@
 ﻿{
+    "Features.OneBedSleeping.Command.Description":  "Tek Yataklı Uyku kurallarını sunucu için değiştir.",
+    "Features.OneBedSleeping.Command.Hunger.Description":  "Herkes için açlığın azalma hızı, zamanın hızlanması.",
+    "Features.OneBedSleeping.Command.Hunger":  "Uyurken Açlık Oranı: {0}%",
+    "Features.OneBedSleeping.Command.Players":  "Çok Oyunculu Uyku Eşiği: {0}%",
+    "Features.OneBedSleeping.Command.Players.Description":  "Zaman hızlanmadan önce uyumak zorunda kalan çevrimiçi oyuncuların yüzdesi.",
+    "Features.OneBedSleeping.Command.Allow":  "Uyumaya İzin Verme: {0}",
+    "Features.OneBedSleeping.Command.Allow.Description":  "Uyumaya izin verilip verilmediği.",
     "Features.OneBedSleeping.NowSleeping":  "Şimdi uyuyor: {0}",
-    "Features.OneBedSleeping.Command.Hunger.Description":  "Zaman hızlanırken herkes için açlığın düşme hızı.",
-    "Features.OneBedSleeping.Command.Players":  "Çok oyunculu Uyku Eşiği: %{0}",
-    "Features.OneBedSleeping.Command.Players.Description":  "Zaman hızlanmadan uyumak zorunda kalan çevrimiçi oyuncuların yüzdesi.",
-    "Features.OneBedSleeping.Command.Hunger":  "Uyurken Açlık Oranı: %{0}",
-    "Features.OneBedSleeping.Command.Description":  "Sunucu için Tek Yataklı Uyku kurallarını değiştirin."
+    "Features.OneBedSleeping.AllowSleeping.Allowed":  "Uyumak izinlidir.",
+    "Features.OneBedSleeping.AllowSleeping.Disallowed":  "Uyumak yasaktır.",
+    "Features.OneBedSleeping.SleepingDisallowed":  "Şu anda uyumak yasaktır.",
+    "Features.OneBedSleeping.SleepingAllowed":  "Uyumaya izin verilir. Oyuncuların {0}%\u0027si geceyi atlamak için uyumaya ihtiyaç duyar.",
+    "ingameerror-obs-sleeping-disallowed":  "Şu anda uyumak yasaktır."
 }
